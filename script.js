@@ -1,1 +1,0 @@
-console.log("Legend MC Website Loaded");
