@@ -1,0 +1,144 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-image: url("legend_logo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    color: white;
+}
+
+.overlay{
+
+    min-height:100vh;
+
+    background:rgba(0,0,0,.70);
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:40px;
+
+}
+
+header h1{
+
+    font-size:70px;
+
+    letter-spacing:4px;
+
+    text-shadow:0 0 20px #fff;
+
+}
+
+header p{
+
+    margin-top:15px;
+
+    color:#ccc;
+
+    font-size:22px;
+
+}
+
+.card{
+
+    width:700px;
+
+    max-width:90%;
+
+    background:rgba(20,20,20,.75);
+
+    border:1px solid rgba(255,255,255,.2);
+
+    border-radius:15px;
+
+    padding:30px;
+
+    margin-top:35px;
+
+    backdrop-filter:blur(8px);
+
+}
+
+.card h2{
+
+    margin-bottom:20px;
+
+    color:#ffffff;
+
+}
+
+.event{
+
+    background:#2b2b2b;
+
+    padding:15px;
+
+    border-radius:10px;
+
+    margin-bottom:15px;
+
+}
+
+.event h3{
+
+    color:#5daeff;
+
+}
+
+.card ul{
+
+    list-style:none;
+
+}
+
+.card li{
+
+    margin:12px 0;
+
+    font-size:20px;
+
+}
+
+.discord{
+
+    margin-top:40px;
+
+    text-decoration:none;
+
+    background:#5865F2;
+
+    color:white;
+
+    padding:18px 45px;
+
+    border-radius:12px;
+
+    font-size:22px;
+
+    transition:.3s;
+
+}
+
+.discord:hover{
+
+    transform:scale(1.08);
+
+    box-shadow:0 0 25px #5865F2;
+
+}
