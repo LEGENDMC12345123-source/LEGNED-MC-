@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>𝐋𝐄𝐆𝐄𝐍𝐃 𝐌𝐂</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/6a5a63c47150471d4bbcfe8d/1jtohbee8';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+<body>
+
+<!-- VIDEO BACKGROUND MODULE -->
+<div class="video-bg-container">
+    <video autoplay loop muted playsinline class="video-bg">
+        <source src="background.mp4" type="video/mp4">
+    </video>
+</div>
+
+<nav>
+    <h1>𝐋𝐄𝐆𝐄𝐍𝐃 𝐌𝐂</h1>
+    <ul>
+        <li><a href="#home" onclick="showMainPage()">Home</a></li>
+        <li><a href="#features" onclick="showMainPage()">Features</a></li>
+        <li><a href="https://discord.gg/qxYUwAV7kR" target="_blank">Support</a></li>
+    </ul>
+</nav>
+
+<!-- MAIN LANDING PAGE CONTAINER -->
+<div id="main-page-content">
+    <section class="hero" id="home">
+        <div class="left">
+            <h1>𝐋𝐄𝐆𝐄𝐍𝐃 𝐌𝐂</h1>
+            <p>A modern Minecraft survival server full of events, economy, PvP and adventures.</p>
+            
+            <div class="status">
+                <div>
+                    <h2>Players Online 👥</h2>
+                    <h3 id="players">0</h3>
+                </div>
+                <div>
+                    <h2>Status</h2>
+                    <h3 id="status">Loading...</h3>
+                </div>
+                <div class="status-card">
+                    <h2>💬Discord Members</h2>
+                    <h3 id="discord-members">147</h3>
+                </div>
+                <div class="copy-card" onclick="copyServerIP()">
+                    <h2>IP Address 🌐</h2>
+                    <h3 id="ip-text">LEGENDS_MC.aternos.me</h3>
+                    <span class="tooltip" id="copy-tooltip">Click to Copy</span>
+                </div>
+            </div>
+            
+            <a class="discord" href="https://discord.gg/qxYUwAV7kR">Join Discord 🟣</a>
+        </div>
+        <div class="right">
+            <img src="legend_logo.jpg" alt="Legend MC Logo">
+        </div>
+    </section>
+
+    <section id="features">
+        <h1>Server Features</h1>
+        <p>Everything you need for the best Minecraft experience.</p>
+        
+        <div class="gallery">
+            <img src="legend_logo.jpg" alt="Event 1">
+            <img src="legend_logo.jpg" alt="Event 2">
+            <img src="legend_logo.jpg" alt="Event 3">
+        </div>
+        
+        <div class="cards">
+            <div class="card" onclick="navigateToFeature('pvp')">
+                <h2>⚔ PvP</h2>
+                <p>Competitive ranked battles. Click to view system info.</p>
+            </div>
+            <div class="card" onclick="navigateToFeature('events')">
+                <h2>🎉 Events</h2>
+                <p>Daily exciting events. Click to view schedule.</p>
+            </div>
+            <div class="card" onclick="navigateToFeature('economy')">
+                <h2>💰 Economy</h2>
+                <p>Balanced economy system. Click to view market guide.</p>
+            </div>
+            <div class="card" onclick="navigateToFeature('survival')">
+                <h2>🏡 Survival</h2>
+                <p>Friendly survival experience. Click to view world mechanics.</p>
+            </div>
+        </div>
+        
+        <a class="join" href="https://discord.gg/qxYUwAV7kR">Join Our Discord</a>
+    </section>
+</div>
+
+<!-- DYNAMIC SUB-FEATURE DEDICATED PAGE -->
+<div id="features-page" style="display: none;">
+    <section class="feature-detail-section">
+        <div class="back-nav">
+            <button class="back-btn" onclick="showMainPage()">← Back to Home</button>
+        </div>
+        <div class="feature-page-content">
+            <div class="feature-left">
+                <h1 id="feature-title">Feature Title</h1>
+                <div class="feature-badge" id="feature-badge">Status: Active</div>
+                <p id="feature-description">Detailed descriptive breakdown of the custom mechanics will dynamically load here.</p>
+                
+                <div class="feature-highlights" id="feature-highlights">
+                    <!-- Highlight bullets populate here dynamically -->
+                </div>
+                
+                <a class="discord" href="https://discord.gg/qxYUwAV7kR" style="margin-top: 30px;">Connect to Server Discord</a>
+            </div>
+            <div class="feature-right">
+                <img id="feature-img" src="legend_logo.jpg" alt="Feature Showcase Graphic">
+            </div>
+        </div>
+    </section>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
